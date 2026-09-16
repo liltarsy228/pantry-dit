@@ -1,0 +1,42 @@
+{% extends "inventory/base.html" %}
+
+{% block title %}{{ equipment.model }} — Учёт оборудования{% endblock %}
+
+{% block content %}
+  <div class="page-heading">
+    <div>
+      <a class="back-link" href="{% url 'equipment_list' %}">← К списку</a>
+      <h1>{{ equipment.model.manufacturer }} {{ equipment.model.name }}</h1>
+      <p>{{ equipment.model.equipment_type.title }} · {{ equipment.model.equipment_type.section.title }}</p>
+    </div>
+    <div class="actions">
+      {% if is_retired %}
+        <span class="status-note">Оборудование списано: редактирование карточки отключено.</span>
+      {% else %}
+        <a class="button secondary" href="{% url 'equipment_edit' equipment.pk %}">Редактировать</a>
+      {% endif %}
+      <a class="button secondary" href="{% url 'status_change' equipment.pk %}">Изменить статус</a>
+      <a class="button" href="{% url 'location_change' equipment.pk %}">Переместить</a>
+    </div>
+  </div>
+
+  <section class="details-grid">
+    <article class="card"><h2>Текущее состояние</h2><dl><dt>Статус</dt><dd>{{ current_status.status.title|default:"—" }}</dd><dt>Местоположение</dt><dd>{{ current_location.location.title|default:"—" }}</dd></dl></article>
+    <article class="card"><h2>Сведения</h2><dl><dt>Дата поступления</dt><dd>{{ equipment.received_on|date:"d.m.Y"|default:"—" }}</dd><dt>Стоимость</dt><dd>{% if equipment.purchase_price is not None %}{{ equipment.purchase_price }} ₽{% else %}—{% endif %}</dd><dt>Примечание</dt><dd>{{ equipment.note|default:"—" }}</dd></dl></article>
+  </section>
+
+  <section class="card">
+    <div class="section-heading"><h2>Идентификаторы</h2><a class="button secondary" href="{% url 'identifier_add' equipment.pk %}">Добавить</a></div>
+    <table><tbody>{% for identifier in equipment.identifiers.all %}<tr><th>{{ identifier.kind.title }}</th><td>{{ identifier.value }}</td><td><a href="{% url 'identifier_edit' equipment.pk identifier.pk %}">Изменить</a></td></tr>{% empty %}<tr><td class="empty" colspan="3">Нет идентификаторов.</td></tr>{% endfor %}</tbody></table>
+  </section>
+
+  <section class="card">
+    <div class="section-heading"><h2>Характеристики</h2><a class="button secondary" href="{% url 'characteristic_add' equipment.pk %}">Добавить</a></div>
+    <table><tbody>{% for item in equipment.characteristic_values.all %}<tr><th>{{ item.characteristic.title }}</th><td>{{ item.value }}{% if item.characteristic.unit %} {{ item.characteristic.unit }}{% endif %}</td></tr>{% empty %}<tr><td class="empty" colspan="2">Нет характеристик.</td></tr>{% endfor %}</tbody></table>
+  </section>
+
+  <section class="details-grid">
+    <article class="card"><h2>История статусов</h2><table><thead><tr><th>Статус</th><th>С</th><th>По</th></tr></thead><tbody>{% for item in equipment.status_history.all %}<tr><td>{{ item.status.title }}</td><td>{{ item.valid_from|date:"d.m.Y H:i" }}</td><td>{{ item.valid_to|date:"d.m.Y H:i"|default:"Текущий" }}</td></tr>{% endfor %}</tbody></table></article>
+    <article class="card"><h2>История местоположений</h2><table><thead><tr><th>Место</th><th>С</th><th>По</th></tr></thead><tbody>{% for item in equipment.location_history.all %}<tr><td>{{ item.location.title }}</td><td>{{ item.valid_from|date:"d.m.Y H:i" }}</td><td>{{ item.valid_to|date:"d.m.Y H:i"|default:"Текущее" }}</td></tr>{% endfor %}</tbody></table></article>
+  </section>
+{% endblock %}

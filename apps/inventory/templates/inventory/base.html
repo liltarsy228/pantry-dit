@@ -1,0 +1,36 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Учёт IT-оборудования{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'inventory/styles.css' %}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navigation">
+      <a class="brand" href="{% url 'equipment_list' %}">Учёт IT-оборудования</a>
+      {% if request.user.is_authenticated %}
+        <nav>
+          <a href="{% url 'equipment_list' %}">Оборудование</a>
+          <a href="{% url 'equipment_create' %}">Добавить</a>
+          <a href="{% url 'admin:index' %}">Справочники</a>
+          <form class="logout-form" method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Выйти</button>
+          </form>
+        </nav>
+      {% endif %}
+    </div>
+  </header>
+  <main class="container">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="message {{ message.tags }}">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

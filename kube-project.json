@@ -1,0 +1,2132 @@
+{
+  "version": 2,
+  "projectName": "Untitled",
+  "nodes": [
+    {
+      "id": "nmtyxxkei0",
+      "type": "infra",
+      "position": {
+        "x": -209.849016191376,
+        "y": -127.45282244859811
+      },
+      "style": {
+        "width": 220,
+        "height": 72
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "server",
+        "label": "Hyper-V",
+        "subtitle": "Hypervisor 0",
+        "variant": "row",
+        "bgColor": "#0f172a",
+        "borderRadius": 48
+      },
+      "measured": {
+        "width": 1422,
+        "height": 852
+      },
+      "selected": false,
+      "width": 1422,
+      "height": 852,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "nmts8406af",
+      "type": "infra",
+      "position": {
+        "x": -14.616343444718495,
+        "y": -77.61146506861968
+      },
+      "style": {
+        "width": 220,
+        "height": 72
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "server",
+        "label": "Proxmox",
+        "subtitle": "Hypervisor 1",
+        "variant": "row",
+        "groupId": null,
+        "textAlign": "left",
+        "borderRadius": 37
+      },
+      "measured": {
+        "width": 1209,
+        "height": 755
+      },
+      "selected": false,
+      "width": 1209,
+      "height": 755,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "nmtz0m5xjp",
+      "type": "shape",
+      "position": {
+        "x": 475.9640937268412,
+        "y": 176.04667807673815
+      },
+      "style": {
+        "width": 361,
+        "height": 396
+      },
+      "zIndex": 0,
+      "data": {
+        "shape": "rectangle",
+        "accent": "slate",
+        "groupId": null,
+        "label": "VMBR5: 192.168.7.0/24 DMZ",
+        "bgColor": "#161f05"
+      },
+      "selected": false,
+      "measured": {
+        "width": 277,
+        "height": 396
+      },
+      "dragging": false,
+      "width": 277,
+      "height": 396,
+      "resizing": false
+    },
+    {
+      "id": "nmtyy74y13",
+      "type": "text",
+      "position": {
+        "x": 589.7622637308518,
+        "y": -139.28808244755186
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "LAN for VMs",
+        "accent": "blue",
+        "bgColor": "#64748b",
+        "fontSize": 10,
+        "titleColor": "#ffffff"
+      },
+      "selected": false,
+      "measured": {
+        "width": 75,
+        "height": 20
+      },
+      "dragging": false,
+      "resizing": false,
+      "width": 75,
+      "height": 20
+    },
+    {
+      "id": "nmtyyhz1y9",
+      "type": "infra",
+      "position": {
+        "x": 552.464093726841,
+        "y": -460.0629370371685
+      },
+      "style": {
+        "width": 180,
+        "height": 150
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "service-provider",
+        "label": "Global Users",
+        "subtitle": "Web / Mobile",
+        "iconName": "Users",
+        "variant": "card"
+      },
+      "measured": {
+        "width": 180,
+        "height": 150
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "nmtyywdn114",
+      "type": "shape",
+      "position": {
+        "x": 170.10822324497167,
+        "y": 176.0466780767381
+      },
+      "style": {
+        "width": 361,
+        "height": 396
+      },
+      "zIndex": 0,
+      "data": {
+        "shape": "rectangle",
+        "accent": "slate",
+        "groupId": null,
+        "label": "VMBR5: 192.168.5.0/24"
+      },
+      "selected": false,
+      "measured": {
+        "width": 276,
+        "height": 396
+      },
+      "dragging": false,
+      "width": 276,
+      "height": 396,
+      "resizing": false
+    },
+    {
+      "id": "nmtyys27g12",
+      "type": "infra",
+      "position": {
+        "x": 573.464093726841,
+        "y": 283.6969886011634
+      },
+      "style": {
+        "width": 220,
+        "height": 72
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "container",
+        "label": "srv-d1",
+        "subtitle": "Docker",
+        "variant": "row",
+        "bgColor": "#292424"
+      },
+      "measured": {
+        "width": 159,
+        "height": 69
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 159,
+      "height": 69,
+      "resizing": false
+    },
+    {
+      "id": "nmtyyv94i13",
+      "type": "infra",
+      "position": {
+        "x": 500.7622637308518,
+        "y": 367.1901839124646
+      },
+      "style": {
+        "width": 220,
+        "height": 72
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "container",
+        "label": "master-node",
+        "subtitle": "Kuber",
+        "variant": "row",
+        "bgColor": "#292424"
+      },
+      "measured": {
+        "width": 164,
+        "height": 69
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 164,
+      "height": 69,
+      "resizing": false
+    },
+    {
+      "id": "nmtyyk41cl",
+      "type": "infra",
+      "position": {
+        "x": 547.4640937268412,
+        "y": 17.641646159494073
+      },
+      "style": {
+        "width": 140,
+        "height": 140
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "proxy",
+        "label": "",
+        "subtitle": "",
+        "iconName": "Router",
+        "variant": "row",
+        "bgColor": "transparent",
+        "textAlign": "center",
+        "shape": "circle",
+        "groupId": null,
+        "titleColor": "transparent"
+      },
+      "measured": {
+        "width": 148,
+        "height": 148
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 148,
+      "height": 148,
+      "resizing": false
+    },
+    {
+      "id": "nmtyyypze15",
+      "type": "line",
+      "position": {
+        "x": 344.2354657792257,
+        "y": 55.33846948947941
+      },
+      "style": {
+        "width": 180.51685672942563,
+        "height": 104.94885340241812
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": -0.45,
+        "start": {
+          "x": 12,
+          "y": 92.94885340241812
+        },
+        "end": {
+          "x": 168.51685672942563,
+          "y": 12
+        },
+        "arrowStart": true,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "triangle",
+        "strokeColor": "#94a3b8",
+        "strokeWidth": 2,
+        "dashed": true,
+        "endBinding": {
+          "nodeId": "nmtyzb0qg1c",
+          "handleId": "left"
+        }
+      },
+      "selected": false,
+      "measured": {
+        "width": 181,
+        "height": 105
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtyz65zt18",
+      "type": "shape",
+      "position": {
+        "x": 517.4683831112269,
+        "y": -102.6043527107042
+      },
+      "style": {
+        "width": 183,
+        "height": 73
+      },
+      "zIndex": 0,
+      "data": {
+        "shape": "rectangle",
+        "accent": "slate",
+        "label": "NAT",
+        "borderStyle": "dashed",
+        "groupId": null
+      },
+      "selected": false,
+      "measured": {
+        "width": 208,
+        "height": 74
+      },
+      "dragging": false,
+      "width": 208,
+      "height": 74,
+      "resizing": false
+    },
+    {
+      "id": "nmtyymnpin",
+      "type": "text",
+      "position": {
+        "x": 562.9683831112269,
+        "y": -102.6043527107042
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "VMBR0 (nic0): 10.5.135.9/16",
+        "accent": "blue",
+        "bgColor": "#64748b",
+        "fontSize": 10,
+        "titleColor": "#ffffff",
+        "groupId": null
+      },
+      "selected": false,
+      "measured": {
+        "width": 147,
+        "height": 24
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtyz24t716",
+      "type": "text",
+      "position": {
+        "x": 562.9683831112269,
+        "y": -66.08042004361113
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "VMBR198: 192.168.198.1/30",
+        "accent": "blue",
+        "fontSize": 10,
+        "titleColor": "#ffffff",
+        "borderRadius": 9
+      },
+      "selected": false,
+      "measured": {
+        "width": 117,
+        "height": 20
+      },
+      "dragging": false,
+      "resizing": false,
+      "width": 117,
+      "height": 20
+    },
+    {
+      "id": "nmtyz5bmv17",
+      "type": "text",
+      "position": {
+        "x": 562.9640937268412,
+        "y": -2.3583538405059272
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "int0: 192.168.198.2/30",
+        "accent": "blue",
+        "fontSize": 10,
+        "titleColor": "#ffffff",
+        "borderRadius": 9
+      },
+      "selected": false,
+      "measured": {
+        "width": 117,
+        "height": 20
+      },
+      "dragging": false,
+      "resizing": false,
+      "width": 117,
+      "height": 20
+    },
+    {
+      "id": "nmtyz7rgw19",
+      "type": "line",
+      "position": {
+        "x": 609.4640937268412,
+        "y": -58.08042004361113
+      },
+      "style": {
+        "width": 24.004289384385743,
+        "height": 67.7220662031052
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": 0,
+        "start": {
+          "x": 12,
+          "y": 55.7220662031052
+        },
+        "end": {
+          "x": 12.004289384385743,
+          "y": 12
+        },
+        "arrowStart": true,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "triangle",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 1,
+        "dashed": true,
+        "startBinding": {
+          "nodeId": "nmtyz5bmv17",
+          "handleId": "top"
+        },
+        "endBinding": {
+          "nodeId": "nmtyz24t716",
+          "handleId": "bottom"
+        }
+      },
+      "selected": false,
+      "measured": {
+        "width": 24,
+        "height": 68
+      }
+    },
+    {
+      "id": "nmtyzb0qg1c",
+      "type": "text",
+      "position": {
+        "x": 512.7520605379364,
+        "y": 55.48856750033403
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "int1: 192.168.5.1",
+        "accent": "blue",
+        "bgColor": "#1a2436",
+        "titleColor": "#ffffff",
+        "borderRadius": 9,
+        "fontSize": 10,
+        "rotation": 0.2
+      },
+      "selected": false,
+      "measured": {
+        "width": 86,
+        "height": 24
+      },
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "nmtyzcvhm1d",
+      "type": "text",
+      "position": {
+        "x": 603.9683831112269,
+        "y": 27.488567500334028
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "NAT",
+        "accent": "indigo",
+        "bgColor": "transparent",
+        "titleColor": "#ffffff",
+        "fontSize": 10
+      },
+      "selected": false,
+      "measured": {
+        "width": 35,
+        "height": 24
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtyzj98j1",
+      "type": "text",
+      "position": {
+        "x": 655.5124031630609,
+        "y": 55.48856750033403
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "int2: 192.168.6.1",
+        "accent": "blue",
+        "bgColor": "#1a2436",
+        "titleColor": "#ffffff",
+        "borderRadius": 9,
+        "fontSize": 10,
+        "rotation": 0.2
+      },
+      "selected": false,
+      "measured": {
+        "width": 88,
+        "height": 24
+      },
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "nmtyzkhj32",
+      "type": "shape",
+      "position": {
+        "x": 788.6006388655416,
+        "y": 176.04667807673815
+      },
+      "style": {
+        "width": 361,
+        "height": 396
+      },
+      "zIndex": 0,
+      "data": {
+        "shape": "rectangle",
+        "accent": "slate",
+        "groupId": null,
+        "label": "VMBR6: 192.168.6.0/24",
+        "bgColor": "#1e0612"
+      },
+      "selected": false,
+      "measured": {
+        "width": 280,
+        "height": 396
+      },
+      "dragging": false,
+      "width": 280,
+      "height": 396,
+      "resizing": false
+    },
+    {
+      "id": "nmtyzn1vz6",
+      "type": "line",
+      "position": {
+        "x": 743.5124031630609,
+        "y": 57.64164615949407
+      },
+      "style": {
+        "width": 141.9022532765565,
+        "height": 107.92035580450973
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": -0.4,
+        "start": {
+          "x": 12,
+          "y": 12
+        },
+        "end": {
+          "x": 129.9022532765565,
+          "y": 95.92035580450973
+        },
+        "arrowStart": true,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "triangle",
+        "strokeColor": "#94a3b8",
+        "strokeWidth": 2,
+        "dashed": true
+      },
+      "selected": false,
+      "measured": {
+        "width": 142,
+        "height": 108
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtyzspp6i",
+      "type": "infra",
+      "position": {
+        "x": 229.75206053793636,
+        "y": 243.1969886011634
+      },
+      "style": {
+        "width": 220,
+        "height": 72
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "container",
+        "label": "srv-dns",
+        "subtitle": "Local DNS",
+        "variant": "row",
+        "bgColor": "#292424",
+        "iconName": "Globe"
+      },
+      "measured": {
+        "width": 159,
+        "height": 69
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 159,
+      "height": 69,
+      "resizing": false
+    },
+    {
+      "id": "nmtyzvk6qk",
+      "type": "infra",
+      "position": {
+        "x": 877.3466852890588,
+        "y": 243.1969886011634
+      },
+      "style": {
+        "width": 180,
+        "height": 150
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "service-provider",
+        "label": "Local Users",
+        "subtitle": "",
+        "iconName": "Users",
+        "variant": "card",
+        "bgColor": "#390f25",
+        "borderWidth": 0
+      },
+      "measured": {
+        "width": 113,
+        "height": 92
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 113,
+      "height": 92,
+      "resizing": false
+    },
+    {
+      "id": "nmtyzvo4fm",
+      "type": "infra",
+      "position": {
+        "x": 876.9287451718349,
+        "y": 393.1969886011634
+      },
+      "style": {
+        "width": 180,
+        "height": 150
+      },
+      "zIndex": 0,
+      "data": {
+        "blockId": "service-provider",
+        "label": "Local Users",
+        "subtitle": "",
+        "iconName": "Users",
+        "variant": "card",
+        "bgColor": "#390f25",
+        "borderWidth": 0
+      },
+      "measured": {
+        "width": 113,
+        "height": 92
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 113,
+      "height": 92,
+      "resizing": false
+    },
+    {
+      "id": "nmtyzwjjqo",
+      "type": "text",
+      "position": {
+        "x": -195.02552139971823,
+        "y": 747.0847568660397
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "Local strategy:\n1. The user opens the website from the local network \n2. The internal service address is resolved \n3. Traffic flows within the LAN",
+        "accent": "blue",
+        "bgColor": "transparent",
+        "fontSize": 24
+      },
+      "selected": false,
+      "measured": {
+        "width": 298,
+        "height": 202
+      },
+      "width": 298,
+      "height": 202,
+      "resizing": false,
+      "dragging": false
+    },
+    {
+      "id": "nmtz0t48sr",
+      "type": "line",
+      "position": {
+        "x": 640.5686819249839,
+        "y": 162.38034186849683
+      },
+      "style": {
+        "width": 222.4895303476211,
+        "height": 24.151098245976215
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": -1,
+        "start": {
+          "x": 12,
+          "y": 12.151098245976215
+        },
+        "end": {
+          "x": 210.4895303476211,
+          "y": 12
+        },
+        "arrowStart": false,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "triangle",
+        "strokeColor": "#94a3b8",
+        "strokeWidth": 2,
+        "dashed": false
+      },
+      "selected": false,
+      "measured": {
+        "width": 222,
+        "height": 24
+      }
+    },
+    {
+      "id": "nmtz0tx9zs",
+      "type": "line",
+      "position": {
+        "x": 677.5124031630609,
+        "y": 121.04667807673809
+      },
+      "style": {
+        "width": 53,
+        "height": 43.85846284364814
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": 0,
+        "start": {
+          "x": 12,
+          "y": 12
+        },
+        "end": {
+          "x": 41,
+          "y": 31.85846284364814
+        },
+        "arrowStart": false,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "none",
+        "strokeColor": "#e00000",
+        "strokeWidth": 2,
+        "dashed": false
+      },
+      "selected": false,
+      "measured": {
+        "width": 53,
+        "height": 44
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtz0u77pt",
+      "type": "line",
+      "position": {
+        "x": 684.464093726841,
+        "y": 108.6442003462193
+      },
+      "style": {
+        "width": 44.310670814684954,
+        "height": 54.99891514362119
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": 0,
+        "start": {
+          "x": 12,
+          "y": 42.99891514362119
+        },
+        "end": {
+          "x": 32.310670814684954,
+          "y": 12
+        },
+        "arrowStart": false,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "none",
+        "strokeColor": "#ff0000",
+        "strokeWidth": 2,
+        "dashed": false
+      },
+      "selected": false,
+      "measured": {
+        "width": 44,
+        "height": 55
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtz0wngzu",
+      "type": "text",
+      "position": {
+        "x": 578.9683831112269,
+        "y": 105.14164615949409
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "int3: 192.168.7.1",
+        "accent": "amber",
+        "bgColor": "#1a2436",
+        "titleColor": "#ffffff",
+        "fontSize": 10
+      },
+      "selected": false,
+      "measured": {
+        "width": 87,
+        "height": 24
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtz10lgvv",
+      "type": "line",
+      "position": {
+        "x": 355.75206053793636,
+        "y": 162.53144011447304
+      },
+      "style": {
+        "width": 245.32442251138946,
+        "height": 24.70709599159332
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": 1,
+        "start": {
+          "x": 233.32442251138946,
+          "y": 12
+        },
+        "end": {
+          "x": 12,
+          "y": 12.70709599159332
+        },
+        "arrowStart": false,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "triangle",
+        "strokeColor": "#94a3b8",
+        "strokeWidth": 2,
+        "dashed": false
+      },
+      "selected": false,
+      "measured": {
+        "width": 245,
+        "height": 25
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtz11tugx",
+      "type": "line",
+      "position": {
+        "x": 508.46409372684104,
+        "y": 108.64420034621928
+      },
+      "style": {
+        "width": 53.67463420875674,
+        "height": 53.886154911874954
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": 0,
+        "start": {
+          "x": 12,
+          "y": 41.886154911874954
+        },
+        "end": {
+          "x": 41.67463420875674,
+          "y": 12
+        },
+        "arrowStart": false,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "none",
+        "strokeColor": "#ff0000",
+        "strokeWidth": 2,
+        "dashed": false
+      },
+      "selected": false,
+      "measured": {
+        "width": 54,
+        "height": 54
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtz12aczz",
+      "type": "line",
+      "position": {
+        "x": 513.1653422288196,
+        "y": 108.04959678871792
+      },
+      "style": {
+        "width": 48.29875149802149,
+        "height": 57.450512214424336
+      },
+      "zIndex": 0,
+      "data": {
+        "curvature": 0,
+        "start": {
+          "x": 12,
+          "y": 12
+        },
+        "end": {
+          "x": 36.29875149802149,
+          "y": 45.450512214424336
+        },
+        "arrowStart": false,
+        "arrowEnd": true,
+        "arrowStartShape": "triangle",
+        "arrowEndShape": "none",
+        "strokeColor": "#e00000",
+        "strokeWidth": 2,
+        "dashed": false
+      },
+      "selected": false,
+      "measured": {
+        "width": 48,
+        "height": 57
+      },
+      "dragging": false
+    },
+    {
+      "id": "nmtz16ed410",
+      "type": "text",
+      "position": {
+        "x": 775.5192626675796,
+        "y": -213.47097827012777
+      },
+      "zIndex": 0,
+      "data": {
+        "text": "10.5.135.9:8080 --> 192.168.198.2:8080 --> 192.168.7.10 (условный gateway ip load balanceра)",
+        "accent": "amber",
+        "bgColor": "transparent",
+        "titleColor": "#ffffff"
+      },
+      "selected": false,
+      "measured": {
+        "width": 648,
+        "height": 28
+      }
+    }
+  ],
+  "edges": [
+    {
+      "type": "labeled",
+      "animated": false,
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 18,
+        "height": 18,
+        "color": "#94a3b8"
+      },
+      "source": "nmtyywdn114",
+      "sourceHandle": "top",
+      "target": "nmtyyk41cl",
+      "targetHandle": "left",
+      "data": {
+        "label": "",
+        "turbo": false,
+        "curveStyle": "stepped",
+        "lineStyle": "solid",
+        "dashGap": 6
+      },
+      "id": "xy-edge__nmtyywdn114top-nmtyyk41clleft"
+    },
+    {
+      "type": "labeled",
+      "animated": false,
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 18,
+        "height": 18,
+        "color": "#94a3b8"
+      },
+      "source": "nmtyy74y13",
+      "sourceHandle": "bottom",
+      "target": "nmtyyv94i13",
+      "targetHandle": "right",
+      "data": {
+        "label": "",
+        "turbo": false,
+        "curveStyle": "stepped",
+        "lineStyle": "solid",
+        "dashGap": 6
+      },
+      "id": "xy-edge__nmtyy74y13bottom-nmtyyv94i13right"
+    }
+  ],
+  "customBlocks": [],
+  "groups": [],
+  "pages": [
+    {
+      "id": "page-1",
+      "name": "Page 1"
+    }
+  ],
+  "activePageId": "page-1",
+  "pageContents": {},
+  "scenarioDocument": {
+    "schemaVersion": 1,
+    "scenarios": [
+      {
+        "id": "d1367302-e238-4370-ac45-51d62ebc7fd5",
+        "name": "Kubernetes production flows",
+        "durationMs": 21800,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 21800
+          }
+        },
+        "tracks": [],
+        "markers": [
+          {
+            "id": "template-animation-start-57cdd789-d5ad-4d9a-971b-fe2e90e3c626",
+            "name": "Cached API request",
+            "atMs": 0
+          },
+          {
+            "id": "template-animation-start-c8cfb20e-ec0c-4389-8a24-f084176eb0e2",
+            "name": "Database API request",
+            "atMs": 4500
+          },
+          {
+            "id": "template-animation-start-98332db2-ac6b-43d0-a135-582f4f750fe7",
+            "name": "Asynchronous job",
+            "atMs": 11000
+          },
+          {
+            "id": "template-animation-start-a35a6ff0-6f98-4b49-a5ac-c8601a3f9349",
+            "name": "Metrics dashboard",
+            "atMs": 16000
+          }
+        ],
+        "triggers": []
+      },
+      {
+        "id": "57cdd789-d5ad-4d9a-971b-fe2e90e3c626",
+        "name": "Cached API request",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "c8cfb20e-ec0c-4389-8a24-f084176eb0e2",
+        "name": "Database API request",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "98332db2-ac6b-43d0-a135-582f4f750fe7",
+        "name": "Asynchronous job",
+        "durationMs": 7100,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 7100
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "a35a6ff0-6f98-4b49-a5ac-c8601a3f9349",
+        "name": "Metrics dashboard",
+        "durationMs": 5000,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 5000
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "8ff1831d-7500-4f5d-a6d2-80533fd9b617",
+        "name": "Load-balanced requests",
+        "durationMs": 41300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 41300
+          }
+        },
+        "tracks": [
+          {
+            "id": "1fc7b9f9-6da5-4b93-b12f-6a643f15b6c6",
+            "target": {
+              "type": "node",
+              "id": "nmtyyhz1y9"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "e0886274-d748-46dd-aa52-626d848f1c15",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#34d399",
+                      "#22d3ee"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "92ce8628-9695-4b95-a484-835804b32657",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvo4fm"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "9936763e-edd3-4102-b874-ff291daf425d",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#34d399",
+                      "#22d3ee"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "eaeba362-5cfe-4e58-906a-0bc723c3d061",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvk6qk"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "bcb001d2-06d3-45d5-8099-53f2215624db",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#34d399",
+                      "#22d3ee"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "7ff69661-5d10-427b-a7c4-d337d89985a2",
+            "target": {
+              "type": "node",
+              "id": "nmtyyk41cl"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "c857f427-f4fe-4a7b-939c-cd360637cfb8",
+                "startMs": 2100,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#34d399",
+                      "#22d3ee"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "1c7b4258-6616-46ef-ba1e-05b17364a823",
+            "target": {
+              "type": "node",
+              "id": "nmtyyhz1y9"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "9f605275-35fc-4987-8645-0787dc55dd18",
+                "startMs": 11700,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#a78bfa",
+                      "#3b82f6"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "749647f3-790f-4eb7-91ef-b03dd75989a1",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvo4fm"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "0396d0f6-ff9d-4123-8406-5cb8496e6b5c",
+                "startMs": 11700,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#a78bfa",
+                      "#3b82f6"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "0aee25db-1d6a-42e8-8fa0-f139d19962fe",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvk6qk"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "c19f7f5f-8b28-4c1d-acd3-179bb19a80d3",
+                "startMs": 11700,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#a78bfa",
+                      "#3b82f6"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "561a941d-82e9-4c91-bb35-59f1f23e2165",
+            "target": {
+              "type": "node",
+              "id": "nmtyyk41cl"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "07fa9e92-4905-48af-92fa-afd8734cb1cd",
+                "startMs": 13800,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#a78bfa",
+                      "#3b82f6"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "a79db178-cc42-41b2-82a4-cb9ddc101dd1",
+            "target": {
+              "type": "node",
+              "id": "nmtyyhz1y9"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "7418ed4b-9d0c-42bb-b37c-69a553ec9cb3",
+                "startMs": 23400,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#f59e0b",
+                      "#f97316"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "c169569f-24df-4dd1-8048-0dfe272cb433",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvo4fm"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "5fdad0d2-cec4-47af-bf5a-99b0f6ac222b",
+                "startMs": 23400,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#f59e0b",
+                      "#f97316"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "e2c10cdf-0b5a-4159-951f-e01e832ef75d",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvk6qk"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "1836030a-0fa7-4d63-949f-6a21470350cb",
+                "startMs": 23400,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#f59e0b",
+                      "#f97316"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "327a2f31-15c6-43f4-91aa-03c312e00629",
+            "target": {
+              "type": "node",
+              "id": "nmtyyk41cl"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "4a0c96d8-8644-4b22-b2fb-ae1c792ca27c",
+                "startMs": 25500,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#f59e0b",
+                      "#f97316"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "eea85421-a7fd-4abb-acbc-f7ba77e296a4",
+        "name": "Cached request via App A",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [
+          {
+            "id": "1fc7b9f9-6da5-4b93-b12f-6a643f15b6c6",
+            "target": {
+              "type": "node",
+              "id": "nmtyyhz1y9"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "e0886274-d748-46dd-aa52-626d848f1c15",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#34d399",
+                      "#22d3ee"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "646c2944-a395-4e30-9489-affb9a9fb5f0",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvo4fm"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "c0fee7d8-00f7-4508-986c-f0798013ebd4",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#34d399",
+                      "#22d3ee"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "8ade6d4b-1924-4a0f-bbe0-96a160d590fe",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvk6qk"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "ae7f05f2-b756-4a6d-b632-25cbdb6e1b5f",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#34d399",
+                      "#22d3ee"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "64974da8-7723-4778-a027-83bf56b890eb",
+            "target": {
+              "type": "node",
+              "id": "nmtyyk41cl"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "4fbf4391-ca8e-43d3-875b-d69f7bb83665",
+                "startMs": 2100,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#34d399",
+                      "#22d3ee"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "5b9280fd-899e-41ff-982d-ae31ebc0e581",
+        "name": "Write request via App B",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [
+          {
+            "id": "1c7b4258-6616-46ef-ba1e-05b17364a823",
+            "target": {
+              "type": "node",
+              "id": "nmtyyhz1y9"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "9f605275-35fc-4987-8645-0787dc55dd18",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#a78bfa",
+                      "#3b82f6"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "303d8670-726d-48e4-b9a1-9e95087286eb",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvo4fm"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "35e183c9-8bf0-4794-b40a-6647129ebbe7",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#a78bfa",
+                      "#3b82f6"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "4b798a53-b904-4815-963d-f4eaab5aae9e",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvk6qk"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "fba71dae-5d0a-45e3-8d38-656157f2852f",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#a78bfa",
+                      "#3b82f6"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "df82444e-1745-4b61-9c4b-00b6a8877960",
+            "target": {
+              "type": "node",
+              "id": "nmtyyk41cl"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "9761d250-cae0-4f13-a954-d0cf614d0225",
+                "startMs": 2100,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#a78bfa",
+                      "#3b82f6"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "6dd555d4-b4b3-486d-860f-715c42e5aa62",
+        "name": "Read request via App C",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [
+          {
+            "id": "a79db178-cc42-41b2-82a4-cb9ddc101dd1",
+            "target": {
+              "type": "node",
+              "id": "nmtyyhz1y9"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "7418ed4b-9d0c-42bb-b37c-69a553ec9cb3",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#f59e0b",
+                      "#f97316"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "118f2d5d-0dc0-4c8a-b63e-601d4d370ade",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvo4fm"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "29ed1ae8-a6a2-471a-906e-cd3800597e59",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#f59e0b",
+                      "#f97316"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "c3379f68-9f10-4f9c-81b5-160b3f59e94f",
+            "target": {
+              "type": "node",
+              "id": "nmtyzvk6qk"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "1ad3cfbf-146d-449a-8ab1-68c319b58d0d",
+                "startMs": 0,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#f59e0b",
+                      "#f97316"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "e382255a-a069-43df-bbae-729e5a3d122e",
+            "target": {
+              "type": "node",
+              "id": "nmtyyk41cl"
+            },
+            "property": "node-effect",
+            "enabled": true,
+            "clips": [
+              {
+                "id": "bd2e3c06-f488-4052-afaf-18ed38db7ba1",
+                "startMs": 2100,
+                "durationMs": 800,
+                "easing": "linear",
+                "repeatCount": 0,
+                "repeatDelayMs": 0,
+                "effect": {
+                  "type": "node.border-beam",
+                  "params": {
+                    "colors": [
+                      "#f59e0b",
+                      "#f97316"
+                    ],
+                    "entrySide": "left"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "f3b1cae3-99f0-442f-a684-6a5844476a31",
+        "name": "Primary database replication",
+        "durationMs": 2900,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 2900
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "3b3caf8d-c2b7-4024-b017-11b1da8e054b",
+        "name": "Telemetry export",
+        "durationMs": 2900,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 2900
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "cc8ce634-81ab-418f-8161-17594511eb21",
+        "name": "Kubernetes production flows",
+        "durationMs": 21800,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 21800
+          }
+        },
+        "tracks": [],
+        "markers": [
+          {
+            "id": "template-animation-start-eadfb77d-b826-40b3-bbd8-4bf07878b8b8",
+            "name": "Cached API request",
+            "atMs": 0
+          },
+          {
+            "id": "template-animation-start-886e30a1-d6f8-4458-9750-4c785f37bade",
+            "name": "Database API request",
+            "atMs": 4500
+          },
+          {
+            "id": "template-animation-start-88c0056d-1ae0-48a1-b556-d64cb654804d",
+            "name": "Asynchronous job",
+            "atMs": 11000
+          },
+          {
+            "id": "template-animation-start-b5bd4215-c819-4109-af78-07de232b011f",
+            "name": "Metrics dashboard",
+            "atMs": 16000
+          }
+        ],
+        "triggers": []
+      },
+      {
+        "id": "eadfb77d-b826-40b3-bbd8-4bf07878b8b8",
+        "name": "Cached API request",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "886e30a1-d6f8-4458-9750-4c785f37bade",
+        "name": "Database API request",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "88c0056d-1ae0-48a1-b556-d64cb654804d",
+        "name": "Asynchronous job",
+        "durationMs": 7100,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 7100
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "b5bd4215-c819-4109-af78-07de232b011f",
+        "name": "Metrics dashboard",
+        "durationMs": 5000,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 5000
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "3f1bf351-5794-45cc-a91e-84d3729141f4",
+        "name": "Load-balanced requests",
+        "durationMs": 41300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 41300
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "8d8d3627-9313-45e2-b334-aef06589a789",
+        "name": "Cached request via App A",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "9dd86890-04c5-4292-b15a-2910ce08bf9f",
+        "name": "Write request via App B",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "8684d51c-7e17-4213-83ae-6a15c0068d0f",
+        "name": "Read request via App C",
+        "durationMs": 11300,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 11300
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "b625049b-b89d-486d-9e1a-3bb6a193cf0f",
+        "name": "Primary database replication",
+        "durationMs": 2900,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 2900
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      },
+      {
+        "id": "091a3d33-bc64-44d0-9bb5-60cc5aa5f77d",
+        "name": "Telemetry export",
+        "durationMs": 2900,
+        "playback": {
+          "rate": 1,
+          "loop": {
+            "mode": "repeat",
+            "startMs": 0,
+            "endMs": 2900
+          }
+        },
+        "tracks": [],
+        "markers": [],
+        "triggers": []
+      }
+    ],
+    "defaultScenarioId": "3f1bf351-5794-45cc-a91e-84d3729141f4"
+  },
+  "turbo": false,
+  "turboColors": [
+    "#ec4899",
+    "#3b82f6"
+  ]
+}
