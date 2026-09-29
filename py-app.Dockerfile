@@ -14,7 +14,7 @@ RUN apt-get update && \
 COPY ./py-project/requirements/ ./requirements/
 
 # Download all dependencies (prod include dev dependencies). In prod install all dependencies, in dev install only dev dependencies
-RUN pip wheel --no-cache-dir --no-deps --wheel-dir /wheels -r  ./requirements/prod.txt
+RUN pip wheel --no-cache-dir --wheel-dir /wheels -r  ./requirements/prod.txt
 
 COPY ./py-project/ .
 
