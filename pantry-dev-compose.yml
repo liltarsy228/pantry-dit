@@ -1,0 +1,54 @@
+services:
+
+  db:
+    container_name: py-app-db
+    image: postgres:18-alpine
+    restart: always
+
+    environment:
+      POSTGRES_USER: it_assets
+      POSTGRES_DB: it_assets-dev
+      # Secrets in the container 
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+    volumes:
+      - type: volume
+        source: py-app-db-data
+        target: /var/lib/postgresql
+
+    secrets:
+      - postgres_password
+
+
+  py-app:
+    container_name: pantry-py-app
+    build:
+      context: .
+      dockerfile: py-app.Dockerfile
+      target: dev
+    env_file:
+      - ./py-project/.env-dev
+
+    depends_on:
+      db:
+        condition: service_healthy
+        
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+
+
+secrets:
+  postgres_password:
+    file: ./py-project/.secrets/postgres_password
+  
+volumes:
+  py-app-db-data: {}
+
+

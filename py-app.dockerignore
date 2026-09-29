@@ -1,0 +1,13 @@
+
+py-project/README.md
+py-project/.venv/
+py-project/.env
+py-project/.env.example
+py-project/.gitignore
+py-project/docs
+py-project/staticfiles/
+py-project/**/__pycache__/
+py-project/**/*.py[cod]
+
+kube-project.json
+Отчет_курсовой_проект_Kubernetes_с_таблицей.docx

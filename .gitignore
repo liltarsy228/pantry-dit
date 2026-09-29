@@ -1,5 +1,8 @@
-.env
-.venv/
-local.sqlite3
-__pycache__/
-*.py[cod]
+./py-project/.env-*
+./py-project/.venv/
+./py-project/local.sqlite3
+./py-project/__pycache__/
+./py-project/*.py[cod]
+./py-project/.secrets/
+./Отчет_курсовой_проект_Kubernetes_с_таблицей.docx
+./kube-project.json
