@@ -39,8 +39,7 @@ RUN pip install --no-cache-dir \
 
 COPY --chown=pantry:pantry --from=build-app  /usr/src/py-app/ .
 
-RUN python manage.py migrate
-# RUN python manage.py createsuperuser
+
 
 # Stage 2: Run PROD
 
