@@ -117,3 +117,18 @@ spec:
         resources:
           requests:
             storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:  
+  name: pg-headless
+spec:
+  clusterIP: None
+  selector:
+    app: pg
+  ports:
+    - name: postgres
+      port: 5432
+      targetPort: 5432
+
+
