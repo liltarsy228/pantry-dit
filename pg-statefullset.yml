@@ -96,7 +96,7 @@ spec:
     spec:
       containers:
         - name: postgresql
-          image: postgres:14
+          image: postgres:16
           env:
             - name: POSTGRES_USER
               value: it_assets
