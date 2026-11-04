@@ -1,0 +1,38 @@
+
+apiVersion: acid.zalan.do/v1
+kind: postgresql
+
+metadata:
+  name: pantry-dit-postgresql-cluster
+  namespace: development
+
+spec:
+  teamId: "acid"
+
+  numberOfInstances: 3
+
+  volume:
+    size: 1Gi
+    storageClass: local-path
+
+  users:
+    it_assets:
+      - superuser
+      - createdb
+
+  databases:
+    it_assets: it_assets
+
+  postgresql:
+    version: "16"
+
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - srv-master1.aitu.lo
+                - srv-worker1.aitu.lo
+                - srv-worker2.aitu.lo
