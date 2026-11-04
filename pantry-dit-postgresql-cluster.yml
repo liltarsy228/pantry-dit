@@ -4,7 +4,7 @@ kind: postgresql
 
 metadata:
   name: pantry-dit-postgresql-cluster
-  namespace: development
+
 
 spec:
   teamId: "acid"
