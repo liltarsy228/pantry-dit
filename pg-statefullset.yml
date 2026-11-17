@@ -96,7 +96,7 @@ spec:
     spec:
       containers:
         - name: postgresql
-          image: postgres:14
+          image: postgres:16
           env:
             - name: POSTGRES_USER
               value: it_assets
@@ -117,3 +117,18 @@ spec:
         resources:
           requests:
             storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:  
+  name: pg-headless
+spec:
+  clusterIP: None
+  selector:
+    app: pg
+  ports:
+    - name: postgres
+      port: 5432
+      targetPort: 5432
+
+
