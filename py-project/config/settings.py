@@ -47,19 +47,30 @@ TEMPLATES = [
 WSGI_APPLICATION = "config.wsgi.application"
 
 DATABASE_ENGINE = os.environ.get("DATABASE_ENGINE", "django.db.backends.postgresql")
+
+
 DATABASES = {
-    "default": {
-        "ENGINE": DATABASE_ENGINE,
-        "NAME": os.environ.get(
-            "SQLITE_NAME" if DATABASE_ENGINE == "django.db.backends.sqlite3" else "POSTGRES_DB",
-            str(BASE_DIR / "local.sqlite3") if DATABASE_ENGINE == "django.db.backends.sqlite3" else "it_assets",
-        ),
-        "USER": os.environ.get("POSTGRES_USER", "it_assets"),
-        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", ""),
-        "HOST": os.environ.get("POSTGRES_HOST", "127.0.0.1"),
-        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
-    }
+    "master": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ["DB_NAME"],
+        "USER": os.environ["DB_USER"],
+        "PASSWORD": os.environ["DB_PASSWORD"],
+        "HOST": os.environ["DB_MASTER_HOST"],
+        "PORT": os.environ.get("DB_PORT", "5432"),
+    },
+    "replica": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ["DB_NAME"],
+        "USER": os.environ["DB_USER"],
+        "PASSWORD": os.environ["DB_PASSWORD"],
+        "HOST": os.environ["DB_REPLICA_HOST"],
+        "PORT": os.environ.get("DB_PORT", "5432"),
+    },
 }
+
+DATABASE_ROUTERS = [
+    "apps.core.db_router.DatabaseRouter",
+]
 
 LANGUAGE_CODE = "ru-ru"
 TIME_ZONE = "Europe/Moscow"

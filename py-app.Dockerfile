@@ -41,6 +41,35 @@ COPY --chown=pantry:pantry --from=build-app  /usr/src/py-app/ .
 
 
 
-# Stage 2: Run PROD
+# # Stage 2: Run PROD
 
-# ENTRYPOINT ["./entrypoint.sh"]
+# FROM python:3.11.14-trixie AS prod-runtime
+
+# ENV HOME=/home/pantry
+# ENV APP_DIR=/home/pantry/py-project
+# RUN addgroup --system pantry && adduser --system --group pantry --home $HOME
+# RUN mkdir -p $APP_DIR
+
+# WORKDIR $APP_DIR
+
+# RUN apt-get update && apt-get install -y netcat-openbsd && rm -rf /var/lib/apt/lists/*
+
+# COPY --from=build-app /wheels /wheels
+# COPY --from=build-app  /usr/src/app/requirements/ ./requirements/
+# RUN pip install --upgrade pip
+
+# RUN pip install --no-cache-dir \
+#     --no-index \
+#     --find-links /wheels \
+#     -r requirements/prod.txt
+
+# COPY --from=build-app  /usr/src/app .
+
+# RUN chown -R app:app $HOME
+
+RUN chmod +x entrypoint.sh
+
+USER app
+
+
+ENTRYPOINT ["./entrypoint.sh"]
