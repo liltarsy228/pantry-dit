@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pantry-py-app
+  namespace: pantry
+  labels:
+    app: pantry-py-app
+
+spec:
+  type: ClusterIP
+
+  selector:
+    app: pantry-py-app
+
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8000
+      targetPort: http
