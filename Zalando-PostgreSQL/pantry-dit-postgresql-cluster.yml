@@ -26,13 +26,13 @@ spec:
   postgresql:
     version: "16"
 
-  nodeAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-      nodeSelectorTerms:
-        - matchExpressions:
-            - key: kubernetes.io/hostname
-              operator: In
-              values:
-                - srv-master1.aitu.lo
-                - srv-worker1.aitu.lo
-                - srv-worker2.aitu.lo
+#  nodeAffinity:
+#    requiredDuringSchedulingIgnoredDuringExecution:
+#      nodeSelectorTerms:
+#        - matchExpressions:
+#            - key: kubernetes.io/hostname
+#              operator: In
+#              values:
+#                - srv-master1
+#                - srv-worker1
+#                - srv-worker2

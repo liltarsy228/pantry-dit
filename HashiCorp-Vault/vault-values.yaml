@@ -1,0 +1,14 @@
+server:
+  ha:
+    enabled: true
+    replicas: 3
+    raft:
+      enabled: true
+  dataStorage:
+    enabled: true
+    size: 5Gi
+    mountPath: "/vault/data"
+    storageClass: "local-path"
+    accessMode: ReadWriteOnce
+ui:
+  enabled: true

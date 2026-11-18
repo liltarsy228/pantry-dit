@@ -1,0 +1,31 @@
+server:
+  ha:
+    enabled: true
+    replicas: 3
+    raft:
+      enabled: true
+  dataStorage:
+    enabled: true
+    size: 5Gi
+    mountPath: "/vault/data"
+    storageClass: "local-path"
+    accessMode: ReadWriteOnce
+  ingress:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: vault-cluster-issuer
+      cert-manager.io/common-name: vault.aitu.lo
+      nginx.ingress.kubernetes.io/ssl-redirect: "true"
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    ingressClassName: nginx
+    pathType: Prefix
+    hosts:
+      - host: vault.aitu.lo
+        paths:
+          - /
+    tls:
+      - secretName: vault-ingress-tls
+        hosts:
+          - vault.aitu.lo
+ui:
+  enabled: true

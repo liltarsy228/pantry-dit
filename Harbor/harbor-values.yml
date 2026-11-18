@@ -1,0 +1,60 @@
+expose:
+  type: ingress
+  caBundleSecretName: full-chain-ca
+  tls:
+    enabled: true
+    certSource: secret
+    secret:
+      secretName: harbor-tls
+  ingress:
+    className: nginx
+    hosts:
+      core: registry.aitu.lo
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-body-size: "0"
+      nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+      nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+externalURL: https://registry.aitu.lo
+harborAdminPassword: "qwerty1!"
+persistence:
+  enabled: true
+  resourcePolicy: keep
+  persistentVolumeClaim:
+    registry:
+      storageClass: local-path
+      accessMode: ReadWriteOnce
+      size: 10Gi
+    jobservice:
+      jobLog:
+        storageClass: local-path
+        accessMode: ReadWriteOnce
+        size: 1Gi
+    database:
+      storageClass: local-path
+      accessMode: ReadWriteOnce
+      size: 5Gi
+    redis:
+      storageClass: local-path
+      accessMode: ReadWriteOnce
+      size: 1Gi
+core:
+  nodeSelector:
+     kubernetes.io/hostname: srv-worker1.aitu.lo
+portal:
+  nodeSelector:
+     kubernetes.io/hostname: srv-worker1.aitu.lo
+jobservice:
+  nodeSelector:
+     kubernetes.io/hostname: srv-worker1.aitu.lo
+registry:
+  nodeSelector:
+     kubernetes.io/hostname: srv-worker1.aitu.lo
+database:
+  internal:
+    nodeSelector:
+       kubernetes.io/hostname: srv-worker1.aitu.lo
+redis:
+  internal:
+    nodeSelector:
+       kubernetes.io/hostname: srv-worker1.aitu.lo
+
