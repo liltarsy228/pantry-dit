@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: pantry-py-app
-          image: registry.aitu.lo/pantry-py-app:2026.11.1-prod
+          image: registry.aitu.lo/pantry-dit/pantry-py-app:2026.11.1-prod
           imagePullPolicy: IfNotPresent
 
           ports:
