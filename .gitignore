@@ -6,5 +6,5 @@
 ./py-project/.secrets/
 ./Отчет_курсовой_проект_Kubernetes_с_таблицей.docx
 ./kube-project.json
-./HashiCorp-Vault/openssl-ca
+./HashiCorp-Vault/openssl-ca/*
 ./HashiCorp-Vault/vault-init-keys.json
