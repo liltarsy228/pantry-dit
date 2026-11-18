@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pantry-py-app
+  namespace: pantry
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - pantry.aitu.lo
+      secretName: pantry-py-app-tls
+  rules:
+    - host: pantry.aitu.lo
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: pantry-py-app
+                port:
+                  number: 8000
