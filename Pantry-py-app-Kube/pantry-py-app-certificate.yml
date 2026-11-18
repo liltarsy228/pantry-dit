@@ -13,6 +13,6 @@ spec:
     - pantry.aitu.lo
   usages:
     - digital signature
-    - digital signature
+    - key encipherment
     - server auth
 
