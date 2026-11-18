@@ -5,6 +5,7 @@ metadata:
   namespace: pantry
 data:
   DJANGO_ALLOWED_HOSTS: "0.0.0.0"
+  DJANGO_CSRF_TRUSTED_ORIGINS: "https://pantry.aitu.lo"
 
   DB_NAME: "it_assets"
   DB_USER: "it_assets"
