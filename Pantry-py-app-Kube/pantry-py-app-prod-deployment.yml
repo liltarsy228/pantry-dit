@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pantry-py-app
+  namespace: pantry
+  labels:
+    app: pantry-py-app
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: pantry-py-app
+
+  template:
+    metadata:
+      labels:
+        app: pantry-py-app
+
+    spec:
+      containers:
+        - name: pantry-py-app
+          image: registry.aitu.lo/pantry-py-app:2026.11.1-prod
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
+
+          envFrom:
+            - configMapRef:
+                name: pantry-py-app-config-prod
+
+          env:
+            - name: DJANGO_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: pantry-django-secret-key
+                  key: DJANGO_SECRET_KEY
+
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: it-assets.pantry-postgresql-cluster.credentials.postgresql.acid.zalan.do
+                  key: password
+
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
