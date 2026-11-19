@@ -67,7 +67,7 @@ COPY --chown=pantry:pantry --from=build-app  /usr/src/py-app/ .
 
 # RUN chown -R app:app $HOME
 
-RUN chmod +x entrypoint.sh
+# RUN chmod +x entrypoint.sh
 
 USER app
 
